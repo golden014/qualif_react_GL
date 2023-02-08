@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar-container{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 2% 2% 2%;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: x-large;
+    font-weight: normal;
+}
+
+.hamburger{
+    display: none;
+}
+
+.navbar-left{
+    cursor: pointer;
+}
+
+
+.navbar-right ul{
+    display: flex;
+}
+
+.navbar-right ul li p{
+    display: block;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.navbar-right ul li p:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 900px){
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background-color: whitesmoke;
+        margin: 6px 0;
+    }
+
+    .navbar-right{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: black;
+        transition: 0.2s;
+    }
+
+    .navbar-right.active {
+        height: 200px;
+    }
+
+    .navbar-right.active ul li p{
+        display: block;
+    }
+
+    .navbar-right ul li p{
+        display: none;
+    }
+
+    .navbar-right ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .search-bar-home input{
+        width: 50vw;
+    }
+}
+
+
+.search-bar-home{
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar-home:hover input{
+    width: 40vw;
+}
+
+.search-bar-home input{
+    width: 12vw;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.5s;
+    background: transparent;
+    font-size: large;
+}
+
+.search-bar-home button{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.5s;
+    background: transparent;
+}
+
+.home-content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-content-content h1{
+    color: black;
+}
+
+.home-title h1{
+    color: black;
+    font-size: 5vh;
+}
+
+.home-content-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    row-gap: 10px;
+}
