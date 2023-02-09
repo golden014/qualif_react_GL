@@ -161,3 +161,16 @@ h1 {
     margin-top: 100px;
     row-gap: 10px;
 }
+
+.fruit-card{
+    height: 1000px;
+}
+
+.fruit-card h1{
+    color: black;
+}
+
+.card{
+    padding: 10px 10px 10px 10px;
+    border-style: solid;
+}
